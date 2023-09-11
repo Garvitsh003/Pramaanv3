@@ -1,0 +1,261 @@
+{
+	"info": {
+		"_postman_id": "354b9215-05ef-4c62-a240-74ac722d239b",
+		"name": "zkp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26622995"
+	},
+	"item": [
+		{
+			"name": "scratch",
+			"item": [
+				{
+					"name": "http://localhost:2375/images/json",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:2375/images/json",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2375",
+							"path": [
+								"images",
+								"json"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:2375/containers/laughing_shtern/exec",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"AttachStdin\": false,\r\n    \"AttachStdout\": true,\r\n    \"AttachStderr\": true,\r\n    \"Tty\": false,\r\n    \"Cmd\": [\r\n        \"bash\",\r\n        \"compute_witness_and_generate_proof.sh\",\r\n        \"5\"\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:2375/containers/laughing_shtern/exec",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "2375",
+							"path": [
+								"containers",
+								"laughing_shtern",
+								"exec"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeployVerifier",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"address\": \"0xC4779375389F1E6d602bE8E4eBb1d339824704A6\",\r\n    \"private_key\": \"497e3a9bd9689477443320126a84b2707fc0fa8a01870f2fd7db45c88c1bb53c\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://172.17.86.220:5000/deployVerifier",
+							"protocol": "http",
+							"host": [
+								"172",
+								"17",
+								"86",
+								"220"
+							],
+							"port": "5000",
+							"path": [
+								"deployVerifier"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:2375/exec/213f4f0abd592b302a6af43637f4422f6387b63a9759643b3e6024655099b298/start",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"Detach\":false,\"Tty\":false}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:2375/exec/db5f18c807f6993658ed0191b16fea038a7a598d6ca2520eed5df4c139612b80/start",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "2375",
+							"path": [
+								"exec",
+								"db5f18c807f6993658ed0191b16fea038a7a598d6ca2520eed5df4c139612b80",
+								"start"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bio_info\": \"1570228\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://172.17.86.220:5000/register",
+					"protocol": "http",
+					"host": [
+						"172",
+						"17",
+						"86",
+						"220"
+					],
+					"port": "5000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GenerateVerifier",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://172.17.86.220:5000/setupAndGenerateVerifier",
+					"protocol": "http",
+					"host": [
+						"172",
+						"17",
+						"86",
+						"220"
+					],
+					"port": "5000",
+					"path": [
+						"setupAndGenerateVerifier"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ComputeWitnessAndGenerateProof",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"did\": \"189151930301613531674289189660361478505\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://172.17.86.220:5000/computeWitnessAndGenerateProof",
+					"protocol": "http",
+					"host": [
+						"172",
+						"17",
+						"86",
+						"220"
+					],
+					"port": "5000",
+					"path": [
+						"computeWitnessAndGenerateProof"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verify",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"scheme\": \"g16\",\r\n  \"curve\": \"bn128\",\r\n  \"proof\": {\r\n    \"a\": [\r\n      \"0x21264dae21619182750842ea8cf96998e4c11465584e36ef36f9d2bf005d27e5\",\r\n      \"0x2c4f137d3017132a0c0e058eab7967c17d4335383f2cb3133be5b57b3b5421e7\"\r\n    ],\r\n    \"b\": [\r\n      [\r\n        \"0x2b4b7dc68aa0791250e607fdf453ce6607336352a3b65078de281e41c6b99de2\",\r\n        \"0x0df013e04f1dd0ee6e9aec3e6ebd810dadda989c19769849cfbdfe03f091b033\"\r\n      ],\r\n      [\r\n        \"0x0163dca607438284226dedaf15bfb496374aa77a0891774e1a960d748446279b\",\r\n        \"0x0df052f6700a27ded256f3b0ce2b4bd9952f9abe2bb2b208cdedd0edf6c3c0ac\"\r\n      ]\r\n    ],\r\n    \"c\": [\r\n      \"0x0adaf23567478f2b4517e1068bd6785594687ab7d154b911ce7f5d3399d834d1\",\r\n      \"0x08bc5fe670eaa4bc9e5f338f19b93b752ec699a379bbf32714abbf784cb2b928\"\r\n    ]\r\n  },\r\n  \"inputs\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://172.17.86.220:5000/verify",
+					"protocol": "http",
+					"host": [
+						"172",
+						"17",
+						"86",
+						"220"
+					],
+					"port": "5000",
+					"path": [
+						"verify"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
