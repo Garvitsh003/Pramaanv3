@@ -1,6 +1,6 @@
 {
-    "web_server_ip": "192.168.29.105",
-    "web_server_port": "8080",
+    "web_server_ip": "62.72.30.178",
+    "web_server_port": "8000",
     "docker_ip": "127.0.0.1",
     "docker_port": "2375",
     "docker_container_name": "distracted_aryabhata",
