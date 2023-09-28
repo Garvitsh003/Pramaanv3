@@ -1,13 +1,5 @@
 {
-    "web_server_ip": "62.72.30.178",
-    "web_server_port": "8000",
-    "docker_ip": "127.0.0.1",
-    "docker_port": "2375",
-    "docker_container_name": "distracted_aryabhata",
-    "zok_file_name": "authentication.zok",
-    "blockchain_address": "HTTP://127.0.0.1",
-    "blockchain_port": "7545",
-    "blockchain_chain_id": "5777",
-    "contract_deployment_address": "0xB21094008126f6a4a2D03B07694A740E8fA3656D",
-    "contract_deployment_pvt_key": "0x8144d6156026cbde0303c8b780069d8b0134738272a48d8392e8eb5d8d18d947"
+    "web_server_ip": "0.0.0.0",
+    "web_server_port": "5000",
+    "debug": false
 }
