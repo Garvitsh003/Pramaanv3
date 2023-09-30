@@ -1,1 +1,1 @@
-export const URL = 'https://62.72.30.178:8000'
+export const URL = 'http://garvitsh003.pythonanywhere.com/'
