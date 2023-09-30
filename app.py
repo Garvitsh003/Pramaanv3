@@ -214,4 +214,4 @@ def verify_registration():
 
 if __name__ == "__main__":
     print("PRAMAAN")
-    app.run(host=config_info['web_server_ip'], port=int(config_info['web_server_port']), debug=True)
+    
