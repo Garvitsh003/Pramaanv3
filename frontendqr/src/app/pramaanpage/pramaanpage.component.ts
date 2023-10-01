@@ -18,6 +18,6 @@ export class PramaanpageComponent {
         this.router.navigate(['/register']);
       }
     verification() {
-        this.router.navigate(['/user-verification']);
+        this.router.navigate(['/generate-qr']);
       }
 }  
