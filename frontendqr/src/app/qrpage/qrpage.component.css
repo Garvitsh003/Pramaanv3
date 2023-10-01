@@ -6,8 +6,8 @@
     height: 100vh;
 }
 .inpl1 img{
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     background-image: url(qr_code.png);
   }
 .qr-container {
