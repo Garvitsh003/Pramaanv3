@@ -14,7 +14,7 @@ export class QrpageComponent implements OnInit {
   ngOnInit(): void {}
 
   generateQRCode(): void {
-    this.http.get('http://192.168.137.1:5000/generateQRCode', { responseType: 'blob' }).subscribe(response => {
+    this.http.get('https://pramaan.live/generateQRCode', { responseType: 'blob' }).subscribe(response => {
       const reader = new FileReader();
       reader.onloadend = () => {
         this.qrCodeImageUrl = reader.result as string; // Set qrCodeImageUrl
