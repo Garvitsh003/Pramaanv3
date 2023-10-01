@@ -113,7 +113,7 @@ def generate_qr_code(link):
 @app.route('/generateQRCode', methods=['GET'])
 def generate_and_display_qr_code():
     # Generate a link (replace 'example.com' with your actual link)
-    link = 'https://www.zeroknow.tech/user-verification'
+    link = 'https://pramaan.live/user-verification'
     
     # Generate the QR code image
     qr_code_img = generate_qr_code(link)
