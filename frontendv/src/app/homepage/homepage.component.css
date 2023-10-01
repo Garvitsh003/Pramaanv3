@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif; 
+    justify-content: center;
+    align-items: center;
+    background-image: url(loginbg.png);
+    background-size: cover;
+  }
+  .flex1 p{
+    font-family: 'Space Grotesk',sans-serif;
+    color: #b38bff;
+    padding-top: 5px;
+  }
+  .flex2 p{
+    font-family: 'Space Grotesk',sans-serif;
+    color: #b38bff;
+    padding-top: 5px;
+  }
+  .flex2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+  .flex1{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 10px;
+      margin-left: 60px;
+  }
+  .inpl1{
+      /* display: flex; */
+      height: 200px;
+      width: 500px;
+      border: 1px solid white;
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+  }
+ .box1{
+  color: white;
+  margin: 10px;
+ }
+ .box2{
+  color: white;
+  margin: 10px;
+ }
+ .flex2{
+  display: flex;
+  /* border: 1px solid white; */
+  margin-top: 10px;
+ }
+ .box3{
+  color: #b38bff;
+ }
+ .box1{
+  color: #b38bff;
+ }
+ #bd{
+  margin-left: 20px;
+  height: 25px;
+ }
+ #uid{
+    margin-left: 45px;
+  height: 25px;
+ }
+ #lab2{
+  margin-left: 10px;
+ }
+ .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid white ; */
+    margin-left: 100px;
+    
+
+ }
+ /* animations */
+ .animation-container {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+}
+.letter {
+  font-weight: bold;
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#p {
+  animation-delay: 0s;
+}
+#r {
+  animation-delay: 0.2s;
+}
+#a1 {
+  animation-delay: 0.4s;
+}
+#m {
+  animation-delay: 0.6s;
+}
+#a2 {
+  animation-delay: 0.8s;
+}
+#a3 {
+  animation-delay: 1s;
+}
+#n {
+  animation-delay: 1.2s;
+}
+.logocontainer{
+  display: flex;
+  font-family: 'Space Grotesk', sans-serif;
+  color: #b38bff;
+  font-size: 40px;
+}
+
+.exist p{
+  color: white;
+}
+
+.formcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid purple; */
+
+}
+
+.flex1{
+  justify-content: space-evenly;
+}
+
+.flex3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.flex3 button{
+  width: 100px;
+  height: 30px;
+  background-image: linear-gradient(to right, #a9a5fd, #ebd75d );
+  border-radius: 5px;
+  border: none;
+}
