@@ -9,7 +9,7 @@
 }
 
 body{
-    height: 100vh;
+    height: auto;
     justify-content: center;
     align-items: center;
     background-image: url(loginbg.png);
