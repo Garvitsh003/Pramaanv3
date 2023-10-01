@@ -1,1 +1,1 @@
-export const URL = 'http://garvitsh003.pythonanywhere.com'
+export const URL = 'https://garvitsh003.pythonanywhere.com'
