@@ -124,7 +124,7 @@ def generate_and_display_qr_code():
     img_bytes = img_bytes.getvalue()
     #Saving QR code image
     image_path = os.path.join('frontend', 'app', 'src', 'qrpage', 'qr_code.png')
-    qr_code_img.save(image_path, format='PNG')
+    qr_code_img.save('frontend/app/src/qrpage/qr_code.png', format='PNG')
 
     # Display the QR code image
     return send_file(
