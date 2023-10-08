@@ -8,7 +8,7 @@
 .inpl1 img{
     height: 300px;
     width: 300px;
-    background-image: url(qr_code.png);
+    background-image: url(../../../../../qr_code.png);
   }
 .qr-container {
     margin-top: 20px;
