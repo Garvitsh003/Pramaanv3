@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="homepage.component.css">
+    
+</head>
+<body>
+<div class="container">
+  <div class="logocontainer">
+      <div class="letter" id="p">P</div>
+      <div class="letter" id="r">R</div>
+      <div class="letter" id="a1">A</div>
+      <div class="letter" id="m">M</div>
+      <div class="letter" id="a2">A</div>
+      <div class="letter" id="a3">A</div>
+      <div class="letter" id="n">N</div>
+  </div>
+
+  <div class="formcontainer">
+      
+      <div class="inpl1">
+          <div class="flex1">
+              <h3><p>Enter ID:</p></h3> &nbsp; <p><textarea #idValue></textarea> &nbsp; &nbsp;</p><br>
+          </div>
+          <div class="flex2">
+              <h3><p>Biometric Data:</p></h3> &nbsp; <p><textarea #bidValue></textarea> &nbsp; &nbsp;</p><br>
+          </div>
+          <div class="flex3">
+              <!-- <button onclick="(register(idValue.value, bidValue.value))">Register</button>  -->
+              <button (click)="register(idValue.value, bidValue.value)">Register</button>
+
+          </div>
+      </div>
+  </div> 
+  <div *ngIf="(didExists)" class="exist">
+      <p>The User is already registered.</p>  
+  </div>
+</div>
+
+
+<script src="app.py"></script>
+</body>
