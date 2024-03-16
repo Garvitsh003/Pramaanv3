@@ -1,0 +1,1 @@
+Pramaan is a sophisticated web-based authentication system, rooted in advanced cryptographic principles and implemented using the Python programming language. At its core, Pramaan redefines the process of digital identity verification by introducing the revolutionary concept of zero-knowledge proof.
